@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<!DOCTYPE module PUBLIC "-//Puppy Crawl//DTD Check Configuration 1.2//EN"
+"http://www.puppycrawl.com/dtds/configuration_1_2.dtd">
+
+<module name="Checker">
+    <!--check BooleanExpressionComplexity-->
+    <module name="TreeWalker">
+        <module name="BooleanExpressionComplexity">
+            <property name="max" value="4"/>
+            <property name="tokens" value="BXOR,LAND,LOR"/>
+        </module>
+    </module>
+
+    <!--check CyclomaticComplexity-->
+    <module name="TreeWalker">
+        <module name="CyclomaticComplexity">
+            <property name="max" value="7"/>
+            <property name="tokens" value="LITERAL_WHILE, LITERAL_IF, LITERAL_FOR"/>
+        </module>
+    </module>
+
+    <!--check FileLength-->
+    <module name="FileLength">
+        <property name="max" value="500"/>
+    </module>
+
+    <!--check LineLength-->
+    <!--<module name="LineLength"/>-->
+
+    <!--check MethodLength-->
+    <module name="TreeWalker">
+        <module name="MethodLength">
+            <property name="tokens" value="METHOD_DEF"/>
+            <property name="max" value="100"/>
+            <property name="countEmpty" value="false"/>
+        </module>
+    </module>
+
+    <!--check EmptyCatchBlock-->
+    <module name="TreeWalker">
+        <module name="EmptyCatchBlock"/>
+    </module>
+
+    <!--check FileTabCharacter-->
+    <module name="FileTabCharacter"/>
+
+    <!--check AvoidStarImport-->
+    <module name="TreeWalker">
+        <module name="AvoidStarImport"/>
+    </module>
+
+    <!--check IllegalImport-->
+    <module name="TreeWalker">
+        <module name="IllegalImport"/>
+    </module>
+
+    <!--check NeedBraces-->
+    <module name="TreeWalker">
+        <module name="NeedBraces"/>
+    </module>
+
+    <!--check Header-->
+    <module name="RegexpHeader">
+        <property name="headerFile" value="${checkstyle.header.file}"/>
+    </module>
+
+</module>
+
+
+
+
+
+
+
+
+
+
+
+
