@@ -1,38 +1,22 @@
+////////////////////////////////////////////////////////////////////
+// [FABRICE] [NANKAM] [2123577]
+// [YIGU] [ZHU] [2082860]
+////////////////////////////////////////////////////////////////////
+
 package it.unipd.mtss;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import static org.junit.Assert.assertEquals;
+import org.junit.Test;
 
-/**
- * Unit test for simple App.
- */
 public class RomanPrinterTest 
-    extends TestCase
 {
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public RomanPrinterTest( String testName )
-    {
-        super( testName );
-    }
-
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( RomanPrinterTest.class );
-    }
-
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
-    }
+  //Issue #4
+  @Test
+  public void testprint1()
+  {
+    int testNumber = 1;
+    String expectedResult = " _____  \n|_   _| \n  | |   \n  | |   \n _| |_  \n|_____| ";
+    String testResult = RomanPrinter.print(testNumber);
+    assertEquals(expectedResult, testResult);
+  }
 }
