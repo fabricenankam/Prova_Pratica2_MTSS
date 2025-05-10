@@ -11,7 +11,9 @@ public class RomanPrinter {
   }
 
   private static String printAsciiArt(String romanNumber){
-    String FirstLine = "", SecondLine = "", ThirdLine = "", FourthLine = "", FifthLine = "", SixthLine = "";
+    String FirstLine = "", SecondLine = "", 
+    ThirdLine = "", FourthLine = "", FifthLine = "",
+     SixthLine = "";
     while(!romanNumber.trim().isEmpty()){
       switch(romanNumber.charAt(0)){
         case 'M': //Issue #10
@@ -83,6 +85,7 @@ public class RomanPrinter {
           break;
       }
     }
-    return FirstLine+"\n"+SecondLine+"\n"+ThirdLine+"\n"+FourthLine+"\n"+FifthLine+"\n"+SixthLine;
+    return FirstLine+"\n"+SecondLine+"\n"
+    +ThirdLine+"\n"+FourthLine+"\n"+FifthLine+"\n"+SixthLine;
   }
 }

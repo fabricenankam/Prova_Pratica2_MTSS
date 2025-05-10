@@ -16,7 +16,9 @@ public class IntegerToRomanTest
     try{
         IntegerToRoman.convert(0);
     }catch (IllegalArgumentException errore){
-        assertEquals("Input deve essere un numero tra 1 e 1000.", errore.getMessage());
+        assertEquals(
+          "Input deve essere un numero tra 1 e 1000.",
+           errore.getMessage());
     }
   }
 
@@ -25,7 +27,9 @@ public class IntegerToRomanTest
     try{
         IntegerToRoman.convert(1001);
     }catch (IllegalArgumentException errore){
-        assertEquals("Input deve essere un numero tra 1 e 1000.", errore.getMessage());
+        assertEquals(
+          "Input deve essere un numero tra 1 e 1000.",
+          errore.getMessage());
     }
   }
   @Test
