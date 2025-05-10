@@ -10,6 +10,8 @@ public class IntegerToRoman {
     if(number > 0 && number <= 1000){
       StringBuilder roman = new StringBuilder();
     int[] numberArabic = {
+        500,     // Issue #9
+        400,     // Issue #9
         100,     // Issue #8
         90,      // Issue #8
         50,      // Issue #7
@@ -21,6 +23,8 @@ public class IntegerToRoman {
         1        // Issue #4
     };
     String[] numberRoman = {
+        "D",     // Issue #9
+        "CD",    // Issue #9
         "C",     // Issue #8
         "XC",    // Issue #8
         "L",     // Issue #7
