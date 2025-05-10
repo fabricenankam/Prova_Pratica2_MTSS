@@ -14,6 +14,16 @@ public class RomanPrinter {
     String FirstLine = "", SecondLine = "", ThirdLine = "", FourthLine = "", FifthLine = "", SixthLine = "";
     while(!romanNumber.trim().isEmpty()){
       switch(romanNumber.charAt(0)){
+       case 'L': //Issue #7
+          FirstLine = FirstLine +   " _       ";
+          SecondLine = SecondLine + "| |      ";
+          ThirdLine = ThirdLine +   "| |      ";
+          FourthLine = FourthLine + "| |      ";
+          FifthLine = FifthLine +   "| |____  ";
+          SixthLine = SixthLine +   "|______| ";
+          romanNumber = romanNumber.substring(1);
+          break;
+
         case 'X': //Issue #6
           FirstLine = FirstLine +   "__   __ ";
           SecondLine = SecondLine + "\\ \\ / / ";
