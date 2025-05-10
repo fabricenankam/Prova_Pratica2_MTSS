@@ -25,7 +25,9 @@
     </module>
 
     <!--check LineLength-->
-    <!--<module name="LineLength"/>-->
+    <module name="LineLength">
+        <property name="max" value="120"/>
+    </module>
 
     <!--check MethodLength-->
     <module name="TreeWalker">

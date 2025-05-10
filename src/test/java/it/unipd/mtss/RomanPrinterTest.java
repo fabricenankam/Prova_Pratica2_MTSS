@@ -15,7 +15,8 @@ public class RomanPrinterTest
   public void testprint1()
   {
     int testNumber = 1;
-    String expectedResult = " _____  \n|_   _| \n  | |   \n  | |   \n _| |_  \n|_____| ";
+    String expectedResult = 
+    " _____  \n|_   _| \n  | |   \n  | |   \n _| |_  \n|_____| ";
     String testResult = RomanPrinter.print(testNumber);
     assertEquals(expectedResult, testResult);
   }
@@ -25,7 +26,8 @@ public class RomanPrinterTest
   public void testprint5()
   {
     int testNumber = 5;
-    String expectedResult = "__      __ \n\\ \\    / / \n \\ \\  / /  \n  \\ \\/ /   \n   \\ /     \n    \\/     ";
+    String expectedResult = 
+    "__      __ \n\\ \\    / / \n \\ \\  / /  \n  \\ \\/ /   \n   \\ /     \n    \\/     ";
     String testResult = RomanPrinter.print(testNumber);
     assertEquals(expectedResult, testResult);
   }
@@ -35,7 +37,8 @@ public class RomanPrinterTest
   public void testprint10()
   {
     int testNumber = 10;
-    String expectedResult = "__   __ \n\\ \\ / / \n \\ V /  \n  > <   \n / . \\  \n/_/ \\_\\ ";
+    String expectedResult = 
+    "__   __ \n\\ \\ / / \n \\ V /  \n  > <   \n / . \\  \n/_/ \\_\\ ";
     String testResult = RomanPrinter.print(testNumber);
     assertEquals(expectedResult, testResult);
   }
@@ -45,7 +48,8 @@ public class RomanPrinterTest
   public void testprint50()
   {
     int testNumber = 50;
-    String expectedResult = " _       \n| |      \n| |      \n| |      \n| |____  \n|______| ";
+    String expectedResult = 
+    " _       \n| |      \n| |      \n| |      \n| |____  \n|______| ";
     String testResult = RomanPrinter.print(testNumber);
     assertEquals(expectedResult, testResult);
   }
@@ -55,7 +59,8 @@ public class RomanPrinterTest
   public void testprint100()
   {
     int testNumber = 100;
-    String expectedResult = "  _____  \n / ____| \n| |      \n| |      \n| |____  \n \\_____| ";
+    String expectedResult = 
+    "  _____  \n / ____| \n| |      \n| |      \n| |____  \n \\_____| ";
     String testResult = RomanPrinter.print(testNumber);
     assertEquals(expectedResult, testResult);
   }
@@ -65,7 +70,8 @@ public class RomanPrinterTest
   public void testprint500()
   {
     int testNumber = 500;
-    String expectedResult = " _____   \n|  __ \\  \n| |  | | \n| |  | | \n| |__| | \n|_____/  ";
+    String expectedResult = 
+    " _____   \n|  __ \\  \n| |  | | \n| |  | | \n| |__| | \n|_____/  ";
     String testResult = RomanPrinter.print(testNumber);
     assertEquals(expectedResult, testResult);
   }
@@ -75,7 +81,8 @@ public class RomanPrinterTest
   public void testprint1000()
   {
     int testNumber = 1000;
-    String expectedResult = " __  __  \n|  \\/  | \n| \\  / | \n| |\\/| | \n| |  | | \n|_|  |_| ";
+    String expectedResult = 
+    " __  __  \n|  \\/  | \n| \\  / | \n| |\\/| | \n| |  | | \n|_|  |_| ";
     String testResult = RomanPrinter.print(testNumber);
     assertEquals(expectedResult, testResult);
   }
