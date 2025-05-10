@@ -49,4 +49,14 @@ public class RomanPrinterTest
     String testResult = RomanPrinter.print(testNumber);
     assertEquals(expectedResult, testResult);
   }
+  
+  //Issue #8
+  @Test
+  public void testprint100()
+  {
+    int testNumber = 100;
+    String expectedResult = "  _____  \n / ____| \n| |      \n| |      \n| |____  \n \\_____| ";
+    String testResult = RomanPrinter.print(testNumber);
+    assertEquals(expectedResult, testResult);
+  }
 }

@@ -118,4 +118,37 @@ public class IntegerToRomanTest
     String testResult = IntegerToRoman.convert(testNumber);
     assertEquals("LXXXIX", testResult);
   }
+
+  //Issue #8
+  @Test
+  public void test90()
+  {
+    int testNumber = 90;
+    String testResult = IntegerToRoman.convert(testNumber);
+    assertEquals("XC", testResult);
+  }
+
+  @Test
+  public void test240()
+  {
+    int testNumber = 240;
+    String testResult = IntegerToRoman.convert(testNumber);
+    assertEquals("CCXL", testResult);
+  }
+
+  @Test
+  public void test314()
+  {
+    int testNumber = 314;
+    String testResult = IntegerToRoman.convert(testNumber);
+    assertEquals("CCCXIV", testResult);
+  }
+
+  @Test
+  public void test399()
+  {
+    int testNumber = 399;
+    String testResult = IntegerToRoman.convert(testNumber);
+    assertEquals("CCCXCIX", testResult);
+  }
 }
