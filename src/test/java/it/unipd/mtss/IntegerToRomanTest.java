@@ -43,4 +43,29 @@ public class IntegerToRomanTest
     String testResult = IntegerToRoman.convert(testNumber);
     assertEquals("III", testResult);
   }
+
+  @Test
+  public void test4()
+  {
+    int testNumber = 4;
+    String testResult = IntegerToRoman.convert(testNumber);
+    assertEquals("IV", testResult);
+  }
+
+//issue #5
+  @Test
+  public void test7()
+  {
+    int testNumber = 7;
+    String testResult = IntegerToRoman.convert(testNumber);
+    assertEquals("VII", testResult);
+  }
+
+  @Test
+  public void test8()
+  {
+    int testNumber = 8;
+    String testResult = IntegerToRoman.convert(testNumber);
+    assertEquals("VIII", testResult);
+  }
 }
