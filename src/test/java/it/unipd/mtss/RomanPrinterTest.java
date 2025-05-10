@@ -29,4 +29,14 @@ public class RomanPrinterTest
     String testResult = RomanPrinter.print(testNumber);
     assertEquals(expectedResult, testResult);
   }
+  
+  //Issue #6
+  @Test
+  public void testprint10()
+  {
+    int testNumber = 10;
+    String expectedResult = "__   __ \n\\ \\ / / \n \\ V /  \n  > <   \n / . \\  \n/_/ \\_\\ ";
+    String testResult = RomanPrinter.print(testNumber);
+    assertEquals(expectedResult, testResult);
+  }
 }

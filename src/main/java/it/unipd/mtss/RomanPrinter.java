@@ -14,6 +14,16 @@ public class RomanPrinter {
     String FirstLine = "", SecondLine = "", ThirdLine = "", FourthLine = "", FifthLine = "", SixthLine = "";
     while(!romanNumber.trim().isEmpty()){
       switch(romanNumber.charAt(0)){
+        case 'X': //Issue #6
+          FirstLine = FirstLine +   "__   __ ";
+          SecondLine = SecondLine + "\\ \\ / / ";
+          ThirdLine = ThirdLine +   " \\ V /  ";
+          FourthLine = FourthLine + "  > <   ";
+          FifthLine = FifthLine +   " / . \\  ";
+          SixthLine = SixthLine +   "/_/ \\_\\ ";
+          romanNumber = romanNumber.substring(1);
+          break;
+
         case 'V': //Issue #5
           FirstLine = FirstLine +   "__      __ ";
           SecondLine = SecondLine + "\\ \\    / / ";
@@ -33,7 +43,6 @@ public class RomanPrinter {
           SixthLine = SixthLine +   "|_____| ";
           romanNumber = romanNumber.substring(1);
           break;
-          
       }
     }
     return FirstLine+"\n"+SecondLine+"\n"+ThirdLine+"\n"+FourthLine+"\n"+FifthLine+"\n"+SixthLine;
